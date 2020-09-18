@@ -310,4 +310,21 @@ body{
   .font-base h1{
     font-size: 3.5rem !important;
   }
+  .brands h2{
+    font-size: 2rem;
+  }
+  .brands p{
+    font-size: 1.5rem;
+  }
+  .fadeInRight{
+    transition: all 0.5s ease-in;
+    transform: translateX(10px);
+    opacity: 1 !important;
+  }
+  
+  .fadeInLeft{
+    transition: all 0.5s ease-in;
+    transform: translateX(-10px);
+    opacity: 1 !important;
+  }  
 }
