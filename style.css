@@ -1,0 +1,308 @@
+*{
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+body{
+  width: 100%;
+}
+
+.row{
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.header .navbar{
+  opacity: 0.8;
+}
+
+.header .navbar li{
+  padding-right: 10px;
+  font-size: 1.5rem;
+}
+
+.header .navbar li a:hover{
+  font-size: 2rem;
+  font-weight: bolder;
+  opacity: 1 !important;
+  transition: font-size 1000ms ease, font-weight 1000ms ease;
+}
+
+/*-------image area----------*/
+
+.img-area{
+  width: 100%;
+  height: 100%;
+}
+
+.img-area .container{
+  margin: 0px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.img-area .container img{
+  width: 100%;
+  height: 100%;
+}
+
+/*---------our story----------*/
+
+.our-story{
+  margin-top: 10rem;
+  position: relative;
+}
+
+.our-story .container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.our-story .font-base h1{
+  font-size: 8rem;
+}
+
+.our-story .font-shadow{
+  position: absolute;
+  top: -5rem;
+  left:250px;  
+  z-index: -999;
+}
+
+.our-story .font-shadow h1{
+  font-size: 10rem;
+  color: #EEEEEE;
+}
+
+.our-story .fadein{
+  margin: 3rem 0px;
+  padding: 40px 20px; 
+  display: fixed;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  opacity: 0.1;
+  transform: translate(0,80px);/*すごく透明な状態で50px下にいる*/
+  transition: all 500ms ;/*時間的変化をまとめて指定できる(対象 時間 速度 変化がいつ始まるか)*/
+  text-align: center;
+}
+
+.our-story .fadein:nth-of-type(2){
+  -moz-transition-delay: 200ms;
+  -webkit-transition-delay: 200ms;
+  -ms-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+}
+
+.our-story .fadein:nth-of-type(3){
+  -moz-transition-delay: 400ms;
+  -webkit-transition-delay: 400ms;
+  -ms-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
+}
+
+
+.our-story .fadein p{
+  text-align: initial;/*プロパティの初期値(left)が適用される*/
+  margin-top: 15px;
+}
+
+.our-story .fadein img{
+  width: 150px;
+  margin-top: 15px;
+  border-radius: 40%;
+}
+
+.fadein.scrollin{
+  opacity: 1;
+  transform: translate(0,0); /*scrollinというクラスがjs処理でつけば元の位置に透明度なしで戻る*/
+}
+
+/*--------fairtrade goods---------*/
+.goods{
+  margin-top: 10rem;
+  position: relative;
+}
+
+.goods .font-base h1{
+  font-size: 8rem;
+}
+
+.goods .font-shadow{
+  position: absolute;
+  top: -5rem;
+  left:250px;  
+  z-index: -999;
+}
+
+.goods .font-shadow h1{
+  font-size: 10rem;
+  color: #EEEEEE;
+}
+
+.goods .col-lg-4{
+  flex-basis: 25%;
+  margin-top: 50px;
+  overflow: hidden;
+  min-width: 200px;
+}
+
+.goods .col-lg-4:hover img{
+  transform: translateY(-10px);
+}
+
+.goods .col-lg-4 img{
+  width: 100%;
+  min-height: 350px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.goods .col-lg-4 h4{
+  margin: 20px 0px;
+}
+
+.goods{
+  margin-top: 10rem;
+  position: relative;
+}
+
+/*----------shop-------------*/
+.shop{
+  margin-top: 10rem;
+  position: relative;
+}
+.shop .font-base h1{
+  font-size: 8rem;
+}
+
+.shop .font-shadow{
+  position: absolute;
+  top: -4rem;
+  left:250px;  
+  z-index: -999;
+}
+
+.shop .font-shadow h1{
+  font-size: 10rem;
+  color: #EEEEEE;
+}
+
+.shop .row{
+  margin-top: 2.5rem;
+}
+
+.shop .col-lg-5 iframe{
+  width: 100%;
+}
+.shop .adress{
+  margin-left: 2px;
+}
+
+.shop .adress h1{
+  font-size: 3.5rem;
+  margin: 0 0 20px;
+}
+
+/*---------footer---------*/
+.footer{
+  margin-top: 5rem;
+  padding-top: 2.5rem;
+  height: 8rem;
+  background: #EEEEEE;
+}
+
+.footer li{
+  margin: 0 2rem;
+}
+
+.footer li:hover a{
+  font-size: 1.5rem;
+  transition: font-size 2000ms ease;
+}
+
+/*=======================*/
+
+/*----------our-story-----------*/
+
+.brands{
+  margin-top: 10rem;
+  position: relative;
+}
+
+.brands .container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.brands .font-base h1{
+  font-size: 8rem;
+}
+
+.brands .font-shadow{
+  position: absolute;
+  top: -5rem;
+  left:250px;  
+  z-index: -999;
+}
+
+.brands .font-shadow h1{
+  font-size: 10rem;
+  color: #EEEEEE;
+}
+
+.brands .animated img{
+  width: 100%;
+  margin-top: 15px;
+}
+
+.brands .row{
+  margin-top: 2.5rem;
+}
+
+.brands h2{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.brands p{
+  font-size: 1.5rem;
+}
+
+.box,.box2{
+  opacity: 0;
+}
+
+.fadeInRight{
+  transition: all 0.5s ease-in;
+  transform: translateX(40px);
+  opacity: 1 !important;
+}
+
+.fadeInLeft{
+  transition: all 0.5s ease-in;
+  transform: translateX(-40px);
+  opacity: 1 !important;
+}
+
+/*------------goods overflow--------------*/
+
+#modal-content{
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  display: none;
+}
+.button-link:hover{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px){
+  .goods{
+    position: relative;
+  }
+
+  .font-base h1{
+    font-size: 6.5rem !important;
+  }
+  .font-shadow{
+    display: none;
+  }
+}
